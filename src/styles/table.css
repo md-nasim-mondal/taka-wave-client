@@ -1,0 +1,62 @@
+.taka-table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+    display: table
+}
+
+.taka-table {
+    border: 1px solid #6897bb
+}
+
+.taka-table tr {
+    border-bottom: 1px solid #95a7ea;
+    border-left: 1px solid #6897bb
+}
+
+/* 
+.taka-table tr:nth-child(odd) {
+    background-color: #fff
+}
+*/
+
+.taka-table tr:nth-child(even) {
+    background-color: #b6d1e488
+}
+
+.taka-table th {
+    padding: 6px 8px;
+    display: table-cell;
+    text-align: left;
+    vertical-align: center;
+    border-left: 1px solid #e1e5f18d
+}
+
+.taka-table th:nth-last-child(-n+2),
+.taka-table td:nth-last-child(-n+2) {
+    text-align: center;
+}
+
+.taka-table td {
+    padding: 6px 8px;
+    display: table-cell;
+    text-align: left;
+    vertical-align: center;
+    border-left: 1px solid #6897bb
+}
+
+.taka-table th:first-child,
+.taka-table td:first-child {
+    padding-left: 16px
+}
+
+.taka-container {
+    padding: 0.01em 16px
+}
+
+.taka-container:after,
+.taka-container:before {
+    content: "";
+    display: table;
+    clear: both
+}
